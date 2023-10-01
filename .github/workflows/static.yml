@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ https://github.com/sivaramalingamk/dpsTimetable/blob/main/Timetable_Windows%20Store.htm }}
+      url: ${{ steps.deployment.outputs.https://github.com/sivaramalingamk/dpsTimetable/blob/main/Timetable_Windows%20Store.htm }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
